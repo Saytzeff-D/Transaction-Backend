@@ -1,0 +1,19 @@
+{
+  "name": "trans-manager-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saytzeff-D/Trans-Manager-Backend.git"
+  },
+  "author": "David Atanda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saytzeff-D/Trans-Manager-Backend/issues"
+  },
+  "homepage": "https://github.com/Saytzeff-D/Trans-Manager-Backend#readme"
+}
