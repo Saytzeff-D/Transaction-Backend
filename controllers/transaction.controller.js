@@ -17,5 +17,14 @@ const addTransaction = (req, res)=>{
         res.status(500).json({message: 'Internal Server Error'})
     })
 }
+const deleteTransaction = (req, res)=>{
+    const payload = req.body    
+    TransactionModel.findByIdAndDelete(payload.id).then(result=>{
+        console.log(result)
+        res.status(200).json({message: 'Success'})
+    }).catch(err=>{
+        res.status(500).json({message: 'Internal Server Error'})
+    })
+}
 
-module.exports = { getTransactions,addTransaction }
+module.exports = { getTransactions,addTransaction, deleteTransaction }
